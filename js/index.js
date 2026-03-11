@@ -32,6 +32,32 @@ heroPanels.forEach((panel) => {
   );
 });
 
+
+// FORCE AUTOPLAY – fixes browser autoplay policy issues
+document.querySelectorAll("video[autoplay]").forEach((video) => {
+  video.muted = true;
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+
+  const tryPlay = () => {
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // If autoplay still blocked, play on first user interaction
+        document.addEventListener("click", () => video.play(), { once: true });
+        document.addEventListener("touchstart", () => video.play(), { once: true });
+      });
+    }
+  };
+
+  if (video.readyState >= 2) {
+    tryPlay();
+  } else {
+    video.addEventListener("loadeddata", tryPlay);
+  }
+});
+
+
 // DOTS: smooth scroll to corresponding hero panel (no snap)
 const dots = document.querySelectorAll(".nav-dot");
 dots.forEach((dot, index) => {
@@ -737,3 +763,7 @@ if (footer) {
     }
   });
 }
+
+
+
+

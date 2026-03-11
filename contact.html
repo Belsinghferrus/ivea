@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVÉA – Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="fixed inset-x-0 top-0 z-50 bg-black/70 backdrop-blur border-b border-white/10">
+        <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+            <a href="./index.html" class="flex items-center space-x-2">
+                <div
+                    class="h-8 w-8 rounded-full border border-emerald-400/60 flex items-center justify-center text-xs tracking-[0.15em]">
+                    IV
+                </div>
+                <span class="text-sm font-medium tracking-[0.25em] uppercase">I V É A</span>
+            </a>
+            <div class="flex items-center space-x-8 text-xs font-medium tracking-[0.25em] uppercase">
+                <a href="./service.html" class="hover:text-emerald-300 transition-colors">IV Drips</a>
+                <a href="./contact.html" class="text-emerald-300">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-16">
+
+        <!-- VIDEO HERO -->
+        <section class="relative min-h-[100vh] flex items-center justify-center text-center px-4 overflow-hidden">
+
+            <!-- Fullscreen video background -->
+            <div class="video-container absolute inset-0 -z-10">
+                <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                    <source src="./assets/video/15238654_1920_1080_24fps (1).mp4" type="video/mp4">
+                </video>
+                <!-- Fade overlay -->
+                <div class="contact-video-overlay absolute inset-0 bg-black/40"></div>
+                <!-- Content overlay -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90"></div>
+            </div>
+
+            <!-- Accent lines -->
+            <div
+                class="pointer-events-none absolute left-4 md:left-8 top-0 w-px h-full bg-gradient-to-b from-transparent via-emerald-400/20 to-transparent">
+            </div>
+            <div
+                class="pointer-events-none absolute right-4 md:right-8 top-0 w-px h-full bg-gradient-to-b from-transparent via-emerald-400/20 to-transparent">
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-3xl mx-auto contact-hero">
+                <p class="text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80 mb-4">
+                    BOOK AN APPOINTMENT
+                </p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-[0.3em] uppercase leading-[1.15] mb-5">
+                    BOOK YOUR<br class="hidden md:block">
+                    INFUSION
+                </h1>
+                <div
+                    class="h-px w-12 bg-gradient-to-r from-emerald-400/80 via-emerald-300/40 to-transparent mx-auto mb-5">
+                </div>
+                <p class="text-sm md:text-base text-zinc-200 max-w-md mx-auto tracking-[0.02em] leading-relaxed">
+                    Schedule your concierge IV therapy at home, hotel or office. A licensed medical professional will
+                    come to you.
+                </p>
+            </div>
+        </section>
+
+
+
+        <!-- CONCIERGE INTRO -->
+<section class="relative w-full bg-black text-zinc-100 px-4 py-20 md:py-28 overflow-hidden">
+
+    <!-- Background texture -->
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(110,231,183,0.05),transparent_60%)]"></div>
+  
+    <div class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+  
+      <!-- Left: Stacked images -->
+      <div class="relative concierge-img-wrap">
+        <!-- Background image (offset) -->
+        <div class="absolute top-6 left-6 right-0 bottom-0 rounded-[2.5rem] overflow-hidden border border-white/5">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4dc592ace6bc4e46f2d1479dbbb19881fbead364.jpg"
+            alt="Luxury IV infusion in hotel room"
+            class="w-full h-full object-cover opacity-40"
+            loading="lazy" decoding="async" />
+        </div>
+  
+        <!-- Main image (front) -->
+        <div class="relative z-10 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/638e9fae28cd80416417ee6efce939cba6604a5c.jpg"
+            alt="Licensed medical professional preparing IV therapy"
+            class="w-full h-[400px] md:h-[480px] object-cover"
+            loading="lazy" decoding="async" />
+  
+          <!-- Gradient -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+  
+          <!-- Floating glass badge -->
+          <div class="absolute bottom-5 left-5 right-5 rounded-2xl bg-white/5 backdrop-blur border border-white/10 px-5 py-4">
+            <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400 mb-1">
+              IVÉA CONCIERGE
+            </p>
+            <p class="text-sm text-zinc-100 leading-snug">
+              Licensed professionals. Personalized care. Your space.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Floating stat -->
+        <div class="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 bg-zinc-900 border border-white/10 rounded-2xl px-5 py-4 text-center shadow-xl">
+          <p class="text-2xl md:text-3xl font-light tracking-[0.15em] text-emerald-300">7</p>
+          <p class="text-[0.6rem] tracking-[0.25em] uppercase text-zinc-400 mt-1">Days a week</p>
+        </div>
+      </div>
+  
+      <!-- Right: Copy -->
+      <div class="space-y-6 concierge-copy">
+        <p class="text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80">
+          PERSONALIZED WELLNESS
+        </p>
+  
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.22em] uppercase leading-[1.4]">
+          Our concierge team will guide you through a personalized wellness experience tailored to your needs.
+        </h2>
+  
+        <div class="h-px w-12 bg-gradient-to-r from-emerald-400/80 via-emerald-300/40 to-transparent"></div>
+
+  
+        <!-- Three details -->
+        <div class="space-y-4 pt-2">
+          <div class="flex items-start gap-4">
+            <div class="w-px h-10 bg-emerald-400/50 shrink-0 mt-1"></div>
+            <div>
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500 mb-1">Private & Discreet</p>
+              <p class="text-sm text-zinc-200">No waiting rooms. No public clinics. Just care in your own space.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-px h-10 bg-emerald-400/50 shrink-0 mt-1"></div>
+            <div>
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500 mb-1">Tailored Protocols</p>
+              <p class="text-sm text-zinc-200">Every infusion is personalized to your health goals and lifestyle.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-px h-10 bg-emerald-400/50 shrink-0 mt-1"></div>
+            <div>
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500 mb-1">Same-Day Available</p>
+              <p class="text-sm text-zinc-200">Book in the morning, receive your infusion the same day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+  <!-- MARQUEE BAND -->
+<div class="marquee-band relative w-full bg-zinc-950 border-y border-white/5 py-5 overflow-hidden">
+    <div class="marquee-track flex items-center gap-0 whitespace-nowrap">
+      <!-- Duplicate the inner content for seamless loop -->
+      <div class="marquee-content flex items-center gap-8 pr-8">
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Concierge IV Therapy</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-400">Dubai</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Home • Hotel • Office</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-400">Licensed Professionals</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Premium Wellness</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-400">Same-Day Available</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Medical-Grade IV Drips</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+      </div>
+      <!-- Clone for seamless loop -->
+      <div class="marquee-content flex items-center gap-8 pr-8" aria-hidden="true">
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Concierge IV Therapy</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-400">Dubai</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Home • Hotel • Office</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-400">Licensed Professionals</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Premium Wellness</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-400">Same-Day Available</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+        <span class="text-[0.7rem] tracking-[0.35em] uppercase text-zinc-100">Medical-Grade IV Drips</span>
+        <span class="text-emerald-400/60 text-sm">✦</span>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- CONTACT FORM SECTION – FULL SCREEN SPLIT -->
+<section id="contact-form"
+  class="relative w-full min-h-screen bg-black text-zinc-100 overflow-hidden">
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+
+    <!-- LEFT: Full image panel -->
+    <div class="relative hidden lg:block">
+      <img
+        src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/638e9fae28cd80416417ee6efce939cba6604a5c.jpg"
+        alt="Luxury IV therapy suite"
+        class="w-full h-full object-cover" />
+
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r to-black/20 via-black/40 from-black/80"></div>
+
+      <!-- Floating content on image -->
+      <div class="absolute inset-0 flex flex-col justify-between p-10 md:p-14">
+        <!-- Top brand -->
+        <div>
+          <p class="text-[0.65rem] tracking-[0.35em] uppercase text-emerald-300/80 mb-2">
+            IVÉA CONCIERGE
+          </p>
+          <h2 class="text-3xl md:text-4xl font-light tracking-[0.22em] uppercase leading-[1.35] text-white max-w-xs">
+            Wellness<br>Delivered<br>To You
+          </h2>
+        </div>
+
+        <!-- Bottom details -->
+        <div class="space-y-5">
+          <div class="h-px w-10 bg-emerald-400/60"></div>
+          <div class="space-y-3">
+            <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+              Available
+            </p>
+            <p class="text-sm text-zinc-200">7 days a week • 8AM – 10PM</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+              Contact
+            </p>
+            <p class="text-sm text-zinc-200">+971 98765 43210</p>
+            <p class="text-sm text-zinc-200">info@iveawellness.com</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+              Service Areas
+            </p>
+            <p class="text-sm text-zinc-200">Home • Hotel • Office</p>
+            <p class="text-xs text-zinc-500 uppercase tracking-[0.15em]">Dubai, UAE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form panel -->
+    <div class="relative flex flex-col justify-center px-6 py-20 md:px-12 lg:px-16 bg-zinc-950 form-panel">
+
+      <!-- Subtle glow -->
+      <div class="pointer-events-none absolute top-0 right-0 w-64 h-64 bg-emerald-400/5 blur-3xl rounded-full"></div>
+
+      <!-- Header -->
+      <div class="form-header space-y-3 mb-10">
+        <p class="text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80">
+          GET STARTED
+        </p>
+        <h2 class="text-2xl md:text-3xl font-light tracking-[0.22em] uppercase leading-[1.35]">
+          Request a<br>Consultation
+        </h2>
+        <div class="h-px w-10 bg-gradient-to-r from-emerald-400/80 to-transparent"></div>
+      </div>
+
+      <!-- Form -->
+      <form class="space-y-8 max-w-lg">
+
+        <!-- Name -->
+        <div class="form-field group relative">
+          <input
+            type="text"
+            name="name"
+            placeholder=" "
+            required
+            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
+          <label
+            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+            Full Name
+          </label>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-field group relative">
+          <input
+            type="tel"
+            name="phone"
+            placeholder=" "
+            required
+            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
+          <label
+            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+            Phone Number
+          </label>
+        </div>
+
+        <!-- Email -->
+        <div class="form-field group relative">
+          <input
+            type="email"
+            name="email"
+            placeholder=" "
+            required
+            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
+          <label
+            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+            Email Address
+          </label>
+        </div>
+
+        <!-- Preferred Service -->
+        <div class="form-field space-y-2">
+          <label class="text-[0.6rem] tracking-[0.3em] uppercase text-zinc-500">
+            Preferred Service
+          </label>
+          <select name="service" required
+            class="w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-300 focus:outline-none focus:border-emerald-400/70 transition-colors appearance-none cursor-pointer">
+            <option value="" disabled selected class="bg-zinc-900 text-zinc-500">Select IV therapy</option>
+            <option class="bg-zinc-900">Hangover Recovery Drip</option>
+            <option class="bg-zinc-900">Jet Lag Recovery Infusion</option>
+            <option class="bg-zinc-900">Immunity Booster Drip</option>
+            <option class="bg-zinc-900">Skin Rejuvenation Infusion</option>
+            <option class="bg-zinc-900">Stress Relief & Energy Boost</option>
+            <option class="bg-zinc-900">Diabetic Support Infusion</option>
+            <option class="bg-zinc-900">Anti-Aging & Longevity Drip</option>
+            <option class="bg-zinc-900">Athletic Recovery Infusion</option>
+            <option class="bg-zinc-900">Detox & Liver Support Drip</option>
+            <option class="bg-zinc-900">Brain & Focus Booster</option>
+            <option class="bg-zinc-900">Beauty Glow Infusion</option>
+            <option class="bg-zinc-900">Senior Wellness Support</option>
+          </select>
+        </div>
+
+        <!-- Preferred Date -->
+        <div class="form-field space-y-2">
+          <label class="text-[0.6rem] tracking-[0.3em] uppercase text-zinc-500">
+            Preferred Date
+          </label>
+          <input type="date" name="date"
+            class="w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-300 focus:outline-none focus:border-emerald-400/70 transition-colors [color-scheme:dark]" />
+        </div>
+
+        <!-- Message -->
+        <div class="form-field group relative">
+          <textarea
+            name="message"
+            rows="2"
+            placeholder=" "
+            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors resize-none"></textarea>
+          <label
+            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+            Message
+          </label>
+        </div>
+
+        <!-- CTA -->
+        <div class="pt-4">
+          <button type="submit"
+            class="w-full rounded-full border-2 border-emerald-300 text-emerald-200 py-4 text-sm tracking-[0.25em] uppercase hover:bg-emerald-300 hover:text-black transition-all duration-300 group">
+            Request Consultation
+            <span class="ml-2 group-hover:translate-x-1 inline-block transition-transform">→</span>
+          </button>
+          <p class="text-center text-[0.6rem] tracking-[0.2em] uppercase text-zinc-600 mt-3">
+            We respond within 2 hours
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- DIRECT CONTACT SECTION -->
+<section id="direct-contact"
+  class="relative w-full bg-black text-zinc-100 px-4 py-20 md:py-28 overflow-hidden">
+
+  <!-- Subtle glow -->
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(110,231,183,0.04),transparent_60%)]"></div>
+
+  <div class="mx-auto max-w-5xl text-center space-y-10">
+
+    <!-- Header -->
+    <div class="direct-header space-y-4">
+      <p class="text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80">
+        REACH US DIRECTLY
+      </p>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.25em] uppercase leading-[1.35]">
+        Prefer to speak with us?
+      </h2>
+      <p class="text-sm md:text-base text-zinc-400 max-w-md mx-auto leading-relaxed">
+        Our concierge team is available 7 days a week. Reach out through any channel you prefer.
+      </p>
+    </div>
+
+    <!-- Three contact options -->
+    <div class="direct-items grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+
+      <!-- Phone -->
+      <a href="tel:+97198765432100"
+        class="direct-item group relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur px-6 py-8 flex flex-col items-center gap-4 hover:border-emerald-400/40 hover:bg-white/10 transition-all duration-300">
+        <div class="w-12 h-12 rounded-full border border-white/10 group-hover:border-emerald-400/50 flex items-center justify-center transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" class="text-emerald-300/70">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.81 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 5.61 5.61l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div class="text-center">
+          <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500 mb-1">Phone</p>
+          <p class="text-sm md:text-base text-zinc-100 group-hover:text-emerald-200 transition-colors">
+            +971 98765 43210
+          </p>
+        </div>
+        <span class="text-[0.6rem] tracking-[0.2em] uppercase text-zinc-600 group-hover:text-emerald-400/60 transition-colors">
+          Call Now →
+        </span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/97198765432100" target="_blank" rel="noopener noreferrer"
+        class="direct-item group relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur px-6 py-8 flex flex-col items-center gap-4 hover:border-emerald-400/40 hover:bg-white/10 transition-all duration-300">
+        <div class="w-12 h-12 rounded-full border border-white/10 group-hover:border-emerald-400/50 flex items-center justify-center transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="currentColor" class="text-emerald-300/70">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+        </div>
+        <div class="text-center">
+          <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500 mb-1">WhatsApp</p>
+          <p class="text-sm md:text-base text-zinc-100 group-hover:text-emerald-200 transition-colors">
+            +971 98765 43210
+          </p>
+        </div>
+        <span class="text-[0.6rem] tracking-[0.2em] uppercase text-zinc-600 group-hover:text-emerald-400/60 transition-colors">
+          Message Now →
+        </span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:info@iveawellness.com"
+        class="direct-item group relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur px-6 py-8 flex flex-col items-center gap-4 hover:border-emerald-400/40 hover:bg-white/10 transition-all duration-300">
+        <div class="w-12 h-12 rounded-full border border-white/10 group-hover:border-emerald-400/50 flex items-center justify-center transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" class="text-emerald-300/70">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </div>
+        <div class="text-center">
+          <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500 mb-1">Email</p>
+          <p class="text-sm md:text-base text-zinc-100 group-hover:text-emerald-200 transition-colors">
+            info@iveawellness.com
+          </p>
+        </div>
+        <span class="text-[0.6rem] tracking-[0.2em] uppercase text-zinc-600 group-hover:text-emerald-400/60 transition-colors">
+          Send Email →
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+
+    <script src="./js/contact.js"></script>
+</body>
+
+
+
+
+<!-- FOOTER -->
+<footer id="footer"
+  class="relative w-full bg-zinc-950 text-zinc-300 border-t border-white/5 px-4 md:px-8 py-16 md:py-20 overflow-hidden">
+
+  <!-- Subtle emerald accent line -->
+  <div class="absolute left-4 md:left-8 top-0 w-px h-24 bg-gradient-to-b from-emerald-400/60 to-transparent"></div>
+
+  <div class="mx-auto max-w-6xl space-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+
+      <!-- Brand & Tagline -->
+      <div class="space-y-5">
+        <div class="flex items-center space-x-3">
+          <div
+            class="h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-emerald-400/60 flex items-center justify-center text-sm tracking-[0.2em] bg-emerald-400/10">
+            IV
+          </div>
+          <div>
+            <h3 class="text-xl md:text-2xl font-light tracking-[0.25em] uppercase text-white">
+              I V É A
+            </h3>
+            <p class="text-xs md:text-sm text-zinc-500 tracking-[0.15em] uppercase">
+              Concierge IV Therapy
+            </p>
+          </div>
+        </div>
+        <p class="text-sm md:text-base text-zinc-400 leading-relaxed max-w-sm">
+          Medical-grade IV infusions delivered to your home, hotel suite, or office — with the
+          discretion and ease your lifestyle expects.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Explore
+        </h4>
+        <ul class="space-y-3 text-sm md:text-base">
+          <li><a href="./index.html" class="hover:text-emerald-300 transition-colors">Home</a></li>
+          <li><a href="./service.html" class="hover:text-emerald-300 transition-colors">IV Therapies</a></li>
+          <li><a href="#process" class="hover:text-emerald-300 transition-colors">Our Process</a></li>
+          <li><a href="#who" class="hover:text-emerald-300 transition-colors">Who We Serve</a></li>
+        </ul>
+      </div>
+
+      <!-- Service Areas / Info -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Service
+        </h4>
+        <ul class="space-y-3 text-sm md:text-base">
+          <li class="text-zinc-400">Home • Hotel • Office</li>
+          <li class="text-zinc-400">By appointment only</li>
+          <li class="text-zinc-400">Licensed medical professionals</li>
+          <li class="text-xs text-zinc-500 uppercase tracking-[0.15em]">
+            Dubai • Concierge Service
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Contact
+        </h4>
+        <div class="space-y-3 text-sm md:text-base">
+          <p class="text-zinc-200">+971 98765 43210</p>
+          <p class="text-zinc-200">info@iveawellness.com</p>
+          <p class="text-zinc-500 text-xs uppercase tracking-[0.15em]">
+            Dubai, United Arab Emirates
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/5 pt-6 md:pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-zinc-500">
+        <p>&copy; 2026 IVÉA. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-emerald-300 transition-colors">Privacy</a>
+          <a href="#" class="hover:text-emerald-300 transition-colors">Terms</a>
+          <a href="./contact.html" class="hover:text-emerald-300 transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

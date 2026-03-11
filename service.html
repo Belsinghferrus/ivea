@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVÉA – IV Therapies</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GSAP + Plugins -->
+  <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden font-sans">
+  <!-- NAVBAR (identical to homepage) -->
+  <nav class="fixed inset-x-0 top-0 z-50 bg-black/70 backdrop-blur border-b border-white/10">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+      <!-- Brand -->
+      <div class="flex items-center space-x-2">
+        <div class="h-8 w-8 rounded-full border border-emerald-400/60 flex items-center justify-center text-xs tracking-[0.15em]">
+          IV
+        </div>
+        <span class="text-sm font-medium tracking-[0.25em] uppercase">I V É A</span>
+      </div>
+
+      <!-- Links -->
+      <div class="flex items-center space-x-8 text-xs font-medium tracking-[0.25em] uppercase">
+        <button data-scroll-to="#services" class="hover:text-emerald-300 transition-colors text-emerald-300">IV DRIPS</button>
+        <button data-scroll-to="#contact" class="hover:text-emerald-300 transition-colors">CONTACT US</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-16">
+    <!-- HERO – Services page specific -->
+   
+    <!-- VIDEO HERO – GSAP FADE -->
+<section id="services"
+class="relative min-h-screen overflow-hidden">
+
+<!-- Fullscreen video background -->
+<div class="video-container absolute inset-0 -z-10">
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    class="w-full h-full object-cover"
+    poster="./assets/video/services-poster.jpg">
+    <source src="./assets/video/15238654_1920_1080_24fps (1).mp4" type="video/mp4">
+  </video>
+  
+  <!-- Fade overlay -->
+  <div class="absolute inset-0 bg-black/40 transition-all duration-1000"></div>
+  
+  <!-- Content overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90"></div>
+</div>
+
+<!-- Hero content -->
+<div class="relative z-10 flex min-h-screen items-center justify-center text-center px-4">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-[0.72rem] md:text-sm tracking-[0.35em] uppercase text-emerald-300/80 mb-4">
+      IVÉA THERAPIES
+    </p>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-[0.3em] uppercase mb-4">
+      Premium IV<br class="hidden md:block">
+      Infusion Therapies
+    </h1>
+    <p class="text-sm md:text-base lg:text-lg text-zinc-300 max-w-xl mx-auto tracking-[0.02em] leading-relaxed">
+      Medical-grade IV drips for energy, recovery, immunity and longevity. Delivered to your door.
+    </p>
+  </div>
+</div>
+</section>
+
+
+
+<!-- IVEA CONCIERGE SECTION -->
+<section id="concierge"
+  class="relative w-full bg-black text-zinc-100 px-4 py-20 md:py-28 lg:py-32 overflow-hidden">
+
+  <!-- Subtle gradient backdrop -->
+  <div class="absolute inset-0 bg-gradient-to-br from-emerald-900/5 via-transparent to-zinc-900/10"></div>
+
+  <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
+    
+    <!-- Left: Image with glass overlay -->
+    <div class="relative concierge-image">
+      <!-- Glow rim -->
+      <div class="absolute -inset-4 md:-inset-6 rounded-[3rem] bg-emerald-400/10 blur-xl"></div>
+      
+      <div class="relative rounded-[2.5rem] overflow-hidden border border-white/10 bg-zinc-900/50 backdrop-blur-xl">
+        <img
+          src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8b34a195c9e4024b11fac75cae411e2be72a23bc.jpg"
+          alt="Concierge IV therapy in luxury hotel suite"
+          class="w-full h-[420px] md:h-[520px] object-cover"
+          loading="lazy"
+          decoding="async" />
+        
+        <!-- Gradient overlay for text legibility -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        
+        <!-- Glass badge -->
+        <div class="absolute bottom-6 left-6 right-6 bg-white/5 backdrop-blur border border-white/20 rounded-2xl p-4 md:p-6">
+          <p class="text-[0.65rem] md:text-sm tracking-[0.3em] uppercase text-zinc-300 mb-1">
+            Concierge Service
+          </p>
+          <p class="text-xs md:text-sm text-zinc-100 leading-relaxed">
+            Home • Hotel • Office
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Clean copy -->
+    <div class="space-y-6 concierge-copy">
+      <p class="text-[0.72rem] md:text-sm tracking-[0.35em] uppercase text-emerald-300/80">
+        IVÉA CONCIERGE
+      </p>
+      
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.22em] uppercase leading-[1.35] mb-6">
+        Premium concierge IV infusion<br class="hidden md:block">
+        service, delivered to you
+      </h2>
+      
+      <div class="space-y-4 text-sm md:text-base lg:text-lg text-zinc-200 leading-relaxed">
+        <p>IVEA is a premium concierge IV infusion service delivering advanced wellness treatments directly to your home, hotel, or office.</p>
+        
+        <p>Designed for individuals who value health, privacy, and convenience, our medical professionals provide personalized IV therapies tailored to restore energy, enhance immunity, and optimize overall wellbeing.</p>
+      </div>
+      
+      <!-- Subtle CTA -->
+      <div class="pt-2">
+        <a href="#contact"
+          class="inline-flex items-center rounded-full border border-emerald-300/70 text-emerald-200 px-8 py-3 text-sm tracking-[0.25em] uppercase hover:bg-emerald-300/20 transition-colors">
+          Explore All Therapies
+          <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- OUR SIGNATURE IV INFUSION THERAPIES -->
+<section id="signature-drips"
+  class="relative w-full bg-black text-zinc-100 px-4 py-20 md:py-28 lg:py-32 overflow-hidden">
+
+  <div class="mx-auto max-w-6xl mb-12 md:mb-16">
+    <p class="text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80 mb-3">
+      OUR SIGNATURE THERAPIES
+    </p>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.25em] uppercase leading-[1.4]">
+      IV INFUSIONS DESIGNED FOR REAL LIVES
+    </h2>
+  </div>
+
+  <div class="mx-auto max-w-6xl space-y-12 md:space-y-14">
+
+    <!-- GROUP 1 -->
+    <!-- 1. Hangover Recovery Drip -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5 flex md:block items-center md:items-start gap-3">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          01 • RECOVERY
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Hangover Recovery Drip
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Rapid hydration with essential vitamins and anti‑nausea support to quickly restore balance and ease hangover symptoms.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8b34a195c9e4024b11fac75cae411e2be72a23bc.jpg"
+            alt="Luxury suite prepared for quiet hangover recovery"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Jet Lag Recovery Infusion -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          02 • TRAVEL
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Jet Lag Recovery Infusion
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Formulated to counter travel fatigue, dehydration and disrupted sleep cycles so your body adjusts faster after long flights.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4dc592ace6bc4e46f2d1479dbbb19881fbead364.jpg"
+            alt="Traveler relaxing during IV therapy with city view"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Immunity Booster Drip -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          03 • IMMUNITY
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Immunity Booster Drip
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          A potent blend of Vitamin C, Zinc and antioxidants to support your immune system and help defend against illness.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5c594ccf1b0cc67744192a8aa062ec6eef573567.jpg"
+            alt="Bright, clean wellness space suggesting immunity support"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERLUDE 1 -->
+    <div class="drip-interlude flex items-center gap-4 md:gap-6 pt-4">
+      <div class="h-px flex-1 bg-gradient-to-r from-emerald-400/60 via-emerald-300/30 to-transparent"></div>
+      <p class="text-[0.7rem] tracking-[0.3em] uppercase text-zinc-500 text-center">
+        Recovery • Travel • Immunity — for the days that ask more from you
+      </p>
+    </div>
+
+    <!-- GROUP 2 -->
+    <!-- 4. Skin Rejuvenation Infusion -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          04 • SKIN
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Skin Rejuvenation Infusion
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Antioxidants and collagen‑supporting nutrients that promote glow, elasticity and deep hydration from within.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/638e9fae28cd80416417ee6efce939cba6604a5c.jpg"
+            alt="Calm close-up of hydrated, glowing skin aesthetic"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Stress Relief & Energy Boost Drip -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          05 • ENERGY
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Stress Relief &amp; Energy Boost Drip
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Helps ease fatigue, mental exhaustion and stress while supporting clearer focus and natural energy levels.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2ff0233c03df9406a84055eb3db8b12837d87b9b.jpg"
+            alt="Professional relaxing with IV drip in a calm room"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Diabetic Support Infusion -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          06 • METABOLIC
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Diabetic Support Infusion
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Supports metabolic health and hydration with nutrients chosen for individuals managing blood sugar, under medical guidance.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/11.jpg"
+            alt="Discreet home visit for metabolic support"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERLUDE 2 -->
+    <div class="drip-interlude flex items-center gap-4 md:gap-6 pt-4">
+      <div class="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-300/40 to-emerald-400/70"></div>
+      <p class="text-[0.7rem] tracking-[0.3em] uppercase text-zinc-500 text-center">
+        Skin • Energy • Metabolic — crafted with medical oversight
+      </p>
+    </div>
+
+    <!-- GROUP 3 -->
+    <!-- 7. Anti-Aging & Longevity Drip -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          07 • LONGEVITY
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Anti‑Aging &amp; Longevity Drip
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Antioxidants and key nutrients that support cellular health and graceful aging over time.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/12.jpg"
+            alt="Elegant setting hinting at longevity and refinement"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Athletic Recovery Infusion -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          08 • PERFORMANCE
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Athletic Recovery Infusion
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Helps replenish electrolytes, ease inflammation and support faster recovery after training or events.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/13.jpg"
+            alt="Athlete resting during a recovery IV session"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Detox & Liver Support Drip -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          09 • DETOX
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Detox &amp; Liver Support Drip
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Supports natural detox pathways and liver function while lifting low energy linked to poor hydration.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/14.jpg"
+            alt="Minimalist still life evoking detox and clarity"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERLUDE 3 -->
+    <div class="drip-interlude flex items-center gap-4 md:gap-6 pt-4">
+      <div class="h-px flex-1 bg-gradient-to-r from-emerald-400/60 via-emerald-200/20 to-emerald-400/60"></div>
+      <p class="text-[0.7rem] tracking-[0.3em] uppercase text-zinc-500 text-center">
+        Longevity • Performance • Detox — deeper, long-term support
+      </p>
+    </div>
+
+    <!-- GROUP 4 -->
+    <!-- 10. Brain & Focus Booster -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          10 • COGNITION
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Brain &amp; Focus Booster
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Neuro‑supportive nutrients to enhance focus, clarity and performance during demanding mental days.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/16.jpg"
+            alt="Focused workspace reflecting mental clarity"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. Beauty Glow Infusion -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          11 • BEAUTY
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Beauty Glow Infusion
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Supports hair, skin and nail health with hydration and beauty‑focused nutrients for a refined glow.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/17.jpg"
+            alt="Soft, glowing beauty-focused image for aesthetic drip"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Senior Wellness Support -->
+    <div class="drip-row flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+      <div class="w-full md:w-1/5">
+        <span class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-500">
+          12 • SENIOR
+        </span>
+      </div>
+      <div class="w-full md:w-2/5 space-y-2">
+        <h3 class="text-lg md:text-xl tracking-[0.18em] uppercase text-zinc-100">
+          Senior Wellness Support
+        </h3>
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+          Gentle infusions tailored for older adults, supporting hydration, energy, immunity and day‑to‑day comfort.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5">
+        <div class="drip-image relative h-52 md:h-56 lg:h-64 overflow-hidden rounded-[2rem]">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/18.jpg"
+            alt="Warm, comfortable space for senior wellness support"
+            class="w-full h-full object-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Base JS (navbar + smooth scroll) -->
+  <script src="./js/index.js"></script>
+   
+
+
+</body>
+
+
+<!-- FOOTER -->
+<footer id="footer"
+  class="relative w-full bg-zinc-950 text-zinc-300 border-t border-white/5 px-4 md:px-8 py-16 md:py-20 overflow-hidden">
+
+  <!-- Subtle emerald accent line -->
+  <div class="absolute left-4 md:left-8 top-0 w-px h-24 bg-gradient-to-b from-emerald-400/60 to-transparent"></div>
+
+  <div class="mx-auto max-w-6xl space-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+
+      <!-- Brand & Tagline -->
+      <div class="space-y-5">
+        <div class="flex items-center space-x-3">
+          <div
+            class="h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-emerald-400/60 flex items-center justify-center text-sm tracking-[0.2em] bg-emerald-400/10">
+            IV
+          </div>
+          <div>
+            <h3 class="text-xl md:text-2xl font-light tracking-[0.25em] uppercase text-white">
+              I V É A
+            </h3>
+            <p class="text-xs md:text-sm text-zinc-500 tracking-[0.15em] uppercase">
+              Concierge IV Therapy
+            </p>
+          </div>
+        </div>
+        <p class="text-sm md:text-base text-zinc-400 leading-relaxed max-w-sm">
+          Medical-grade IV infusions delivered to your home, hotel suite, or office — with the
+          discretion and ease your lifestyle expects.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Explore
+        </h4>
+        <ul class="space-y-3 text-sm md:text-base">
+          <li><a href="./index.html" class="hover:text-emerald-300 transition-colors">Home</a></li>
+          <li><a href="./service.html" class="hover:text-emerald-300 transition-colors">IV Therapies</a></li>
+          <li><a href="#process" class="hover:text-emerald-300 transition-colors">Our Process</a></li>
+          <li><a href="#who" class="hover:text-emerald-300 transition-colors">Who We Serve</a></li>
+        </ul>
+      </div>
+
+      <!-- Service Areas / Info -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Service
+        </h4>
+        <ul class="space-y-3 text-sm md:text-base">
+          <li class="text-zinc-400">Home • Hotel • Office</li>
+          <li class="text-zinc-400">By appointment only</li>
+          <li class="text-zinc-400">Licensed medical professionals</li>
+          <li class="text-xs text-zinc-500 uppercase tracking-[0.15em]">
+            Dubai • Concierge Service
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Contact
+        </h4>
+        <div class="space-y-3 text-sm md:text-base">
+          <p class="text-zinc-200">+971 98765 43210</p>
+          <p class="text-zinc-200">info@iveawellness.com</p>
+          <p class="text-zinc-500 text-xs uppercase tracking-[0.15em]">
+            Dubai, United Arab Emirates
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/5 pt-6 md:pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-zinc-500">
+        <p>&copy; 2026 IVÉA. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-emerald-300 transition-colors">Privacy</a>
+          <a href="#" class="hover:text-emerald-300 transition-colors">Terms</a>
+          <a href="./contact.html" class="hover:text-emerald-300 transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

@@ -36,12 +36,12 @@
         <!-- <button data-scroll-to="#home" class="hover:text-emerald-300 transition-colors">
           HOME
         </button> -->
-        <button data-scroll-to="#drips" class="hover:text-emerald-300 transition-colors">
+        <a href="./service.html" class="hover:text-emerald-300 transition-colors">
           IV DRIPS
-        </button>
-        <button data-scroll-to="#contact" class="hover:text-emerald-300 transition-colors">
+        </a>
+        <a href="./service.html" class="hover:text-emerald-300 transition-colors">
           CONTACT US
-        </button>
+        </a>
       </div>
     </div>
   </nav>
@@ -123,14 +123,14 @@
     </section>
 
     <!-- NAV DOTS (still only control hero panels) -->
-    <div class="nav-dots fixed right-5 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
+    <!-- <div class="nav-dots fixed right-5 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
       <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors active"
         data-panel="0"></button>
       <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors"
         data-panel="1"></button>
       <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors"
         data-panel="2"></button>
-    </div>
+    </div> -->
 
     <!-- NEXT SECTION: Different types of IV drips (normal scrolling) -->
     <section id="drips" class="min-h-screen w-full bg-zinc-950 text-zinc-100 flex items-center justify-center px-4">
@@ -1046,7 +1046,6 @@
   <script src="./js/index.js"></script>
 </body>
 
-
 <!-- FOOTER -->
 <footer id="footer"
   class="relative w-full bg-zinc-950 text-zinc-300 border-t border-white/5 px-4 md:px-8 py-16 md:py-20 overflow-hidden">
@@ -1054,11 +1053,11 @@
   <!-- Subtle emerald accent line -->
   <div class="absolute left-4 md:left-8 top-0 w-px h-24 bg-gradient-to-b from-emerald-400/60 to-transparent"></div>
 
-  <div class="mx-auto max-w-6xl">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+  <div class="mx-auto max-w-6xl space-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
 
       <!-- Brand & Tagline -->
-      <div class="space-y-4 md:space-y-6">
+      <div class="space-y-5">
         <div class="flex items-center space-x-3">
           <div
             class="h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-emerald-400/60 flex items-center justify-center text-sm tracking-[0.2em] bg-emerald-400/10">
@@ -1074,26 +1073,38 @@
           </div>
         </div>
         <p class="text-sm md:text-base text-zinc-400 leading-relaxed max-w-sm">
-          Medical-grade IV infusions delivered to your home, hotel suite, or office.
-          Wellness redefined for your lifestyle.
+          Medical grade IV infusions delivered to your home, hotel suite, or office - with the
+          discretion and ease your lifestyle expects.
         </p>
       </div>
 
-      <!-- Quick Links -->
+      <!-- Explore -->
       <div>
         <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
           Explore
         </h4>
         <ul class="space-y-3 text-sm md:text-base">
           <li><a href="./index.html" class="hover:text-emerald-300 transition-colors">Home</a></li>
-          <li><a href="./therapies.html" class="hover:text-emerald-300 transition-colors">IV Therapies</a></li>
-          <li><a href="./contact.html" class="hover:text-emerald-300 transition-colors">Contact us</a></li>
-
+          <li><a href="./service.html" class="hover:text-emerald-300 transition-colors">IV Therapies</a></li>
+          <li><a href="#process" class="hover:text-emerald-300 transition-colors">Our Process</a></li>
+          <li><a href="#who" class="hover:text-emerald-300 transition-colors">Who We Serve</a></li>
         </ul>
       </div>
 
-      <!-- Services -->
-    
+      <!-- Service Areas / Info -->
+      <div>
+        <h4 class="text-sm font-medium tracking-[0.2em] uppercase text-zinc-200 mb-6">
+          Service
+        </h4>
+        <ul class="space-y-3 text-sm md:text-base">
+          <li class="text-zinc-400">Home • Hotel • Office</li>
+          <li class="text-zinc-400">By appointment only</li>
+          <li class="text-zinc-400">Licensed medical professionals</li>
+          <li class="text-xs text-zinc-500 uppercase tracking-[0.15em]">
+            Dubai • Concierge Service
+          </li>
+        </ul>
+      </div>
 
       <!-- Contact -->
       <div>
@@ -1101,21 +1112,23 @@
           Contact
         </h4>
         <div class="space-y-3 text-sm md:text-base">
-          <p>+91 98765 43210</p>
-          <p>info@iveawellness.com</p>
-          <p class="text-zinc-500 text-xs">dubai</p>
+          <p class="text-zinc-200">+971 98765 43210</p>
+          <p class="text-zinc-200">info@iveawellness.com</p>
+          <p class="text-zinc-500 text-xs uppercase tracking-[0.15em]">
+            Dubai, United Arab Emirates
+          </p>
         </div>
       </div>
     </div>
 
     <!-- Bottom bar -->
-    <div class="border-t border-white/5 mt-16 pt-8 md:pt-12">
-      <div class="flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-zinc-500">
+    <div class="border-t border-white/5 pt-6 md:pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-zinc-500">
         <p>&copy; 2026 IVÉA. All rights reserved.</p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
+        <div class="flex items-center gap-6">
           <a href="#" class="hover:text-emerald-300 transition-colors">Privacy</a>
           <a href="#" class="hover:text-emerald-300 transition-colors">Terms</a>
-          <a href="#" class="hover:text-emerald-300 transition-colors">Contact</a>
+          <a href="./contact.html" class="hover:text-emerald-300 transition-colors">Contact</a>
         </div>
       </div>
     </div>

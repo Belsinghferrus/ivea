@@ -489,7 +489,7 @@ if (processSection) {
       const i = Math.max(0, Math.min(index, steps.length - 1));
 
       steps.forEach((step, idx) => {
-        step.style.color = idx === i ? "#6ee7b7" : "#9ca3af"; // emerald-300 vs zinc-400
+        step.style.color = idx === i ? "#C5B073" : "#9ca3af"; // emerald-300 vs zinc-400
       });
 
       slides.forEach((slide, idx) => {
@@ -667,5 +667,73 @@ if (whoSection) {
         ease: "power2.inOut"
       });
     });
+  });
+}
+
+
+
+
+
+// FULLSCREEN LUXURY CTA
+const fullscreenCta = document.querySelector("#cta-fullscreen");
+
+if (fullscreenCta) {
+  const headline = fullscreenCta.querySelector(".cta-headline");
+  const body = fullscreenCta.querySelector(".cta-body");
+  const buttons = fullscreenCta.querySelectorAll(".cta-primary, .cta-secondary");
+
+  gsap.from(headline, {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: fullscreenCta,
+      start: "top 90%"
+    }
+  });
+
+  gsap.from(body, {
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: fullscreenCta,
+      start: "top 85%"
+    }
+  });
+
+  gsap.from(buttons, {
+    opacity: 0,
+    y: 40,
+    scale: 0.95,
+    duration: 0.8,
+    stagger: 0.1,
+    ease: "back.out(1.2)",
+    scrollTrigger: {
+      trigger: fullscreenCta,
+      start: "top 80%"
+    }
+  });
+}
+
+
+// FOOTER ANIMATION
+const footer = document.querySelector("#footer");
+
+if (footer) {
+  const columns = footer.querySelectorAll("div.space-y-4, div:has(h4)");
+  
+  gsap.from(columns, {
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    stagger: 0.1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: footer,
+      start: "top 90%"
+    }
   });
 }

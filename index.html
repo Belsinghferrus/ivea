@@ -18,8 +18,7 @@
 <body class="bg-black text-white overflow-x-hidden font-sans">
 
   <!-- NAVBAR (Rolex-style, fixed, dark, minimal) -->
-  <nav
-    class="fixed inset-x-0 top-0 z-50 bg-black/70 backdrop-blur border-b border-white/10">
+  <nav class="fixed inset-x-0 top-0 z-50 bg-black/70 backdrop-blur border-b border-white/10">
     <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
       <!-- Brand -->
       <div class="flex items-center space-x-2">
@@ -28,7 +27,7 @@
           IV
         </div>
         <span class="text-sm font-medium tracking-[0.25em] uppercase">
-            I V É A
+          I V É A
         </span>
       </div>
 
@@ -38,7 +37,7 @@
           HOME
         </button> -->
         <button data-scroll-to="#drips" class="hover:text-emerald-300 transition-colors">
-            IV DRIPS
+          IV DRIPS
         </button>
         <button data-scroll-to="#contact" class="hover:text-emerald-300 transition-colors">
           CONTACT US
@@ -60,22 +59,21 @@
         In a world where wellness meets sophistication.
       </p>
       <div class="scroll-down flex items-center justify-center">
-        <div
-          class="arrow w-5 h-5 border-r-2 border-b-2 border-white rotate-45 animate-bounce">
+        <div class="arrow w-5 h-5 border-r-2 border-b-2 border-white rotate-45 animate-bounce">
         </div>
       </div>
     </div>
 
     <!-- HERO PANELS (pinned, layered) -->
-    <section class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
-      <video autoplay muted loop playsinline
-        class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <section
+      class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
+      <video autoplay muted loop playsinline class="absolute inset-0 -z-10 h-full w-full object-cover">
         <source src="./assets/video/15238654_1920_1080_24fps (1).mp4" type="video/mp4" />
       </video>
       <div class="pointer-events-none absolute inset-0 -z-10 bg-black/40"></div>
 
       <h2 class="text-5xl md:text-7xl font-extralight tracking-[0.35em] opacity-0">
-       VITALITY
+        VITALITY
       </h2>
       <p class="max-w-2xl mt-4 mb-8 text-lg md:text-2xl opacity-0">
         Timeless elegance meets unparalleled precision.
@@ -86,9 +84,9 @@
       </a>
     </section>
 
-    <section class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
-      <video autoplay muted loop playsinline
-        class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <section
+      class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
+      <video autoplay muted loop playsinline class="absolute inset-0 -z-10 h-full w-full object-cover">
         <source src="./assets/video/19237274-hd_1920_1080_25fps.mp4" type="video/mp4" />
       </video>
       <div class="pointer-events-none absolute inset-0 -z-10 bg-black/40"></div>
@@ -105,9 +103,9 @@
       </a>
     </section>
 
-    <section class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
-      <video autoplay muted loop playsinline
-        class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <section
+      class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
+      <video autoplay muted loop playsinline class="absolute inset-0 -z-10 h-full w-full object-cover">
         <source src="./assets/video/15238654_1920_1080_24fps (1).mp4" type="video/mp4" />
       </video>
       <div class="pointer-events-none absolute inset-0 -z-10 bg-black/40"></div>
@@ -125,8 +123,7 @@
     </section>
 
     <!-- NAV DOTS (still only control hero panels) -->
-    <div
-      class="nav-dots fixed right-5 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
+    <div class="nav-dots fixed right-5 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
       <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors active"
         data-panel="0"></button>
       <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors"
@@ -136,8 +133,7 @@
     </div>
 
     <!-- NEXT SECTION: Different types of IV drips (normal scrolling) -->
-    <section id="drips"
-      class="min-h-screen w-full bg-zinc-950 text-zinc-100 flex items-center justify-center px-4">
+    <section id="drips" class="min-h-screen w-full bg-zinc-950 text-zinc-100 flex items-center justify-center px-4">
       <div class="max-w-5xl w-full space-y-8">
         <h2 class="text-3xl md:text-5xl font-light tracking-[0.25em] uppercase text-center">
           [Different types of IV drips section content]
@@ -148,24 +144,318 @@
       </div>
     </section>
 
-    <!-- CONTACT SECTION (normal scrolling) -->
-    <section id="contact"
-      class="min-h-screen w-full bg-black text-zinc-100 flex items-center justify-center px-4">
-      <div class="max-w-4xl w-full space-y-8">
-        <h2 class="text-3xl md:text-5xl font-light tracking-[0.25em] uppercase text-center">
-          [Contact us section content]
-        </h2>
-        <p class="max-w-2xl mx-auto text-center text-zinc-300">
-          <!-- Replace with real content later -->
-        </p>
+    <!-- ABOUT: IVÉA Concierge IV Infusion -->
+    <section id="about" class="relative w-full bg-black text-zinc-100 px-4 py-20 md:py-32 overflow-hidden">
+      <div class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+        <!-- LEFT: Visual / Atmosphere -->
+        <div class="relative lg:col-span-5">
+          <!-- Ambient glow behind the card -->
+          <div
+            class="about-ambient pointer-events-none absolute -inset-10 rounded-[3rem] bg-emerald-500/20 blur-3xl opacity-60">
+          </div>
+
+          <!-- Vertical label for a more bespoke feel -->
+          <p
+            class="hidden md:block absolute -left-20 top-1/2 -translate-y-1/2 rotate-90 text-[0.65rem] tracking-[0.35em] uppercase text-zinc-500">
+            Concierge IV Therapy
+          </p>
+
+          <!-- Main luxury image card -->
+          <div
+            class="about-image relative aspect-[4/5] overflow-hidden rounded-[2.5rem] border border-white/10 bg-zinc-900/60 backdrop-blur">
+            <img
+              src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/638e9fae28cd80416417ee6efce939cba6604a5c.jpg"
+              alt="Luxury at-home IV infusion therapy in a serene lounge" class="h-full w-full object-cover scale-105"
+              loading="lazy" decoding="async" />
+
+            <!-- Subtle top gradient so text reads clean on any image -->
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+            </div>
+
+            <!-- Floating glass info card on image -->
+            <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
+              <div class="rounded-2xl bg-white/5 px-4 py-3 backdrop-blur border border-white/10 max-w-xs">
+                <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-300">
+                  IVÉA Concierge
+                </p>
+                <p class="mt-1 text-xs text-zinc-200 leading-relaxed">
+                  Licensed clinicians delivering tailored IV protocols in the privacy of your
+                  home, hotel suite, or office.
+                </p>
+              </div>
+
+              <div
+                class="hidden sm:flex flex-col items-end text-right text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+                <span class="text-emerald-300">Home • Hotel • Office</span>
+                <span class="mt-1 h-px w-10 bg-zinc-600"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Copy & value props -->
+        <div class="lg:col-span-7 space-y-8 about-copy">
+          <div class="space-y-4">
+            <p class="about-kicker text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80">
+              ABOUT IVÉA
+            </p>
+
+            <h2
+              class="about-heading text-3xl md:text-4xl lg:text-5xl font-light tracking-[0.25em] uppercase leading-[1.35]">
+              PREMIUM IV INFUSION<br class="hidden md:block">
+              THERAPY AT YOUR DOORSTEP
+            </h2>
+
+            <div class="about-line h-px w-16 bg-gradient-to-r from-emerald-400/80 via-emerald-300/40 to-transparent">
+            </div>
+          </div>
+
+          <div class="about-body space-y-4 text-sm md:text-base text-zinc-300 leading-relaxed">
+            <p>
+              IVÉA is a concierge IV infusion service for individuals who treat wellbeing with
+              the same intent as any other investment - discreet, precise, and uncompromising.
+            </p>
+            <p>
+              Our licensed medical professionals design intravenous therapies to restore
+              cellular hydration, elevate energy, support immunity, refine skin health, and
+              complement chronic care protocols - all without you leaving your environment.
+            </p>
+            <p>
+              Every visit follows strict medical standards, from pre-treatment screening to
+              sterile preparation and post-infusion monitoring, so the experience feels as
+              safe as a clinic and as effortless as room service.
+            </p>
+          </div>
+
+          <!-- 2x2 grid of luxury proof points -->
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div
+              class="about-pill group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur">
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+                Concierge service
+              </p>
+              <p class="mt-2 text-sm text-zinc-100 leading-relaxed">
+                Same-day appointments at home, hotel, or office, scheduled around your calendar -
+                not ours.
+              </p>
+            </div>
+
+            <div
+              class="about-pill group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur">
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+                Clinical expertise
+              </p>
+              <p class="mt-2 text-sm text-zinc-100 leading-relaxed">
+                Administered by licensed healthcare professionals under hospital-grade
+                infusion protocols.
+              </p>
+            </div>
+
+            <div
+              class="about-pill group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur">
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+                Tailored formulas
+              </p>
+              <p class="mt-2 text-sm text-zinc-100 leading-relaxed">
+                Bespoke IV blends for recovery, performance, immunity, skin radiance, and
+                long-term vitality.
+              </p>
+            </div>
+
+            <div
+              class="about-pill group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur">
+              <p class="text-[0.65rem] tracking-[0.3em] uppercase text-zinc-400">
+                Discreet & private
+              </p>
+              <p class="mt-2 text-sm text-zinc-100 leading-relaxed">
+                White-glove care with minimal footprint so your schedule - and your privacy
+                remain uninterrupted.
+              </p>
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </section>
 
-  </main>
 
-  <script>
+
+
+    <!-- WHY CHOOSE IVÉA -->
    
-  </script>
+
+
+ <section id="why" class="relative w-full bg-black text-zinc-100 px-4 py-20 md:py-28 overflow-hidden">
+
+    <div class="mx-auto max-w-6xl why-header text-center mb-10 md:mb-14">
+      <p class="text-[0.72rem] tracking-[0.35em] uppercase text-emerald-300/80">
+        WHY CHOOSE IVÉA
+      </p>
+      <h2 class="mt-3 text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.25em] uppercase leading-[1.4]">
+        SIMPLE, SAFE AND TRULY LUXURY
+      </h2>
+      <p class="mt-4 text-sm md:text-base text-zinc-300 max-w-2xl mx-auto">
+        IVÉA is for people who want hospital‑level care, but do not want to sit in a
+        waiting room. We bring the treatment to you, on your terms.
+      </p>
+    </div>
+
+    <!-- Scrollable row on mobile, grid on desktop -->
+    <div
+      class="why-grid relative mx-auto max-w-6xl flex gap-5 overflow-x-auto pb-4 pr-8 md:pr-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0 snap-x snap-mandatory">
+      <!-- 1. Luxury Home Service -->
+      <article
+        class="why-card min-w-[260px] max-w-xs md:min-w-0 md:max-w-none snap-center rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur overflow-hidden flex flex-col">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8b34a195c9e4024b11fac75cae411e2be72a23bc.jpg"
+            alt="Private hotel suite prepared for in-room wellness treatment" class="h-full w-full object-cover"
+            loading="lazy" decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          <span class="absolute left-4 bottom-3 text-[0.65rem] tracking-[0.3em] uppercase text-zinc-200">
+            01 • Home Service
+          </span>
+        </div>
+        <div class="p-5 space-y-2 flex-1 flex flex-col">
+          <h3 class="text-xs md:text-sm tracking-[0.25em] uppercase text-zinc-300">
+            Luxury Home Service
+          </h3>
+          <p class="text-sm text-zinc-100 leading-relaxed">
+            We come to your home, hotel or office. No travel, no waiting room, no
+            disruption to your day.
+          </p>
+        </div>
+      </article>
+
+      <!-- 2. Medical Expertise -->
+      <article
+        class="why-card min-w-[260px] max-w-xs md:min-w-0 md:max-w-none snap-center rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur overflow-hidden flex flex-col">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4dc592ace6bc4e46f2d1479dbbb19881fbead364.jpg"
+            alt="Nurse administering IV therapy in a calm lounge" class="h-full w-full object-cover" loading="lazy"
+            decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          <span class="absolute left-4 bottom-3 text-[0.65rem] tracking-[0.3em] uppercase text-zinc-200">
+            02 • Medical Care
+          </span>
+        </div>
+        <div class="p-5 space-y-2 flex-1 flex flex-col">
+          <h3 class="text-xs md:text-sm tracking-[0.25em] uppercase text-zinc-300">
+            Medical Expertise
+          </h3>
+          <p class="text-sm text-zinc-100 leading-relaxed">
+            Your drip is handled by DHA‑licensed nurses and supervised by doctors. The
+            process is safe, clear and controlled.
+          </p>
+        </div>
+      </article>
+
+      <!-- 3. Premium Formulations -->
+      <article
+        class="why-card min-w-[260px] max-w-xs md:min-w-0 md:max-w-none snap-center rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur overflow-hidden flex flex-col">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5c594ccf1b0cc67744192a8aa062ec6eef573567.jpg"
+            alt="Luxury spa room with warm lighting and calm atmosphere" class="h-full w-full object-cover"
+            loading="lazy" decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          <span class="absolute left-4 bottom-3 text-[0.65rem] tracking-[0.3em] uppercase text-zinc-200">
+            03 • Premium Blends
+          </span>
+        </div>
+        <div class="p-5 space-y-2 flex-1 flex flex-col">
+          <h3 class="text-xs md:text-sm tracking-[0.25em] uppercase text-zinc-300">
+            Premium Formulations
+          </h3>
+          <p class="text-sm text-zinc-100 leading-relaxed">
+            We use high‑quality vitamins, minerals, antioxidants and hydration solutions —
+            never cheap shortcuts.
+          </p>
+        </div>
+      </article>
+
+      <!-- 4. Personalized Wellness Plans -->
+      <article
+        class="why-card min-w-[260px] max-w-xs md:min-w-0 md:max-w-none snap-center rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur overflow-hidden flex flex-col">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/638e9fae28cd80416417ee6efce939cba6604a5c.jpg"
+            alt="Client relaxing while receiving IV drip therapy" class="h-full w-full object-cover" loading="lazy"
+            decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          <span class="absolute left-4 bottom-3 text-[0.65rem] tracking-[0.3em] uppercase text-zinc-200">
+            04 • Personal Plans
+          </span>
+        </div>
+        <div class="p-5 space-y-2 flex-1 flex flex-col">
+          <h3 class="text-xs md:text-sm tracking-[0.25em] uppercase text-zinc-300">
+            Personalized Wellness Plans
+          </h3>
+          <p class="text-sm text-zinc-100 leading-relaxed">
+            We adjust every infusion to your goals and lifestyle — recovery, immunity,
+            skin, focus or long‑term health.
+          </p>
+        </div>
+      </article>
+
+      <!-- 5. Discreet & Private -->
+      <article
+        class="why-card min-w-[260px] max-w-xs md:min-w-0 md:max-w-none snap-center rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur overflow-hidden flex flex-col">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2ff0233c03df9406a84055eb3db8b12837d87b9b.jpg"
+            alt="Private spa suite with warm, discreet lighting" class="h-full w-full object-cover" loading="lazy"
+            decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          <span class="absolute left-4 bottom-3 text-[0.65rem] tracking-[0.3em] uppercase text-zinc-200">
+            05 • Discreet Care
+          </span>
+        </div>
+        <div class="p-5 space-y-2 flex-1 flex flex-col">
+          <h3 class="text-xs md:text-sm tracking-[0.25em] uppercase text-zinc-300">
+            Discreet & Private
+          </h3>
+          <p class="text-sm text-zinc-100 leading-relaxed">
+            Our team works quietly and professionally. Ideal for founders, executives and
+            high‑profile guests who value privacy.
+          </p>
+        </div>
+      </article>
+
+      <!-- 6. Seamless Booking -->
+      <article
+        class="why-card min-w-[260px] max-w-xs md:min-w-0 md:max-w-none rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur overflow-hidden flex flex-col">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/638e9fae28cd80416417ee6efce939cba6604a5c.jpg"
+            alt="Calm living room prepared for a home wellness visit" class="h-full w-full object-cover"
+            loading="lazy" decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          <span class="absolute left-4 bottom-3 text-[0.65rem] tracking-[0.3em] uppercase text-zinc-200">
+            06 • Easy Booking
+          </span>
+        </div>
+        <div class="p-5 space-y-2 flex-1 flex flex-col">
+          <h3 class="text-xs md:text-sm tracking-[0.25em] uppercase text-zinc-300">
+            Seamless Booking
+          </h3>
+          <p class="text-sm text-zinc-100 leading-relaxed">
+            Book by call or WhatsApp with clear time windows, so you always know when
+            your nurse will arrive.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  </main>
+ 
+
   <script src="./js/index.js"></script>
 </body>
 

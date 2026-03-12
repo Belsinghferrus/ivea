@@ -63,4 +63,27 @@ document.querySelectorAll(".marquee-band").forEach((band) => {
   
 
 
+  // FORCE AUTOPLAY – fixes browser autoplay policy issues
+document.querySelectorAll("video[autoplay]").forEach((video) => {
+    video.muted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+  
+    const tryPlay = () => {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If autoplay still blocked, play on first user interaction
+          document.addEventListener("click", () => video.play(), { once: true });
+          document.addEventListener("touchstart", () => video.play(), { once: true });
+        });
+      }
+    };
+  
+    if (video.readyState >= 2) {
+      tryPlay();
+    } else {
+      video.addEventListener("loadeddata", tryPlay);
+    }
+  });
   

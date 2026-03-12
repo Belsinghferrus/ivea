@@ -13,6 +13,92 @@ heroPanels.forEach((panel) => {
   });
 });
 
+//MMAIN INTRO
+const introTl = gsap.timeline({ delay: 0.2 });
+
+// Frame lines draw in simultaneously
+introTl.to([".intro-line-top", ".intro-line-bottom"], {
+  scaleX: 1,
+  duration: 0.8,
+  ease: "power3.inOut",
+  stagger: 0.05
+}, 0);
+
+introTl.to([".intro-vline-left", ".intro-vline-right"], {
+  scaleY: 1,
+  duration: 0.9,
+  ease: "power3.inOut",
+  stagger: 0.05
+}, 0.1);
+
+// Background image breathes in
+introTl.to(".intro-bg", {
+  opacity: 1,
+  duration: 1.5,
+  ease: "power2.out"
+}, 0.3);
+
+// Background image slow zoom out
+introTl.to(".intro-bg img", {
+  scale: 1,
+  duration: 4,
+  ease: "power1.out"
+}, 0.3);
+
+// Corner labels
+introTl.to([".intro-top-label", ".intro-bottom-label"], {
+  opacity: 1,
+  duration: 0.5,
+  ease: "power2.out",
+  stagger: 0.1
+}, 0.6);
+
+// Kicker
+introTl.to(".intro-kicker-wrap", {
+  opacity: 1,
+  duration: 0.5,
+  ease: "power2.out"
+}, 0.8);
+
+// Main headline clip reveal
+introTl.to(".intro-headline-1", {
+  y: 0,
+  duration: 1.1,
+  ease: "power4.out"
+}, 0.9);
+
+// Subline clip reveal
+introTl.to(".intro-subline", {
+  y: 0,
+  duration: 0.8,
+  ease: "power3.out"
+}, 1.3);
+
+// Dots
+introTl.to(".intro-dots", {
+  opacity: 1,
+  duration: 0.5,
+  ease: "power2.out"
+}, 1.6);
+
+// Scroll hint
+introTl.to(".intro-scroll", {
+  opacity: 1,
+  duration: 0.5,
+  ease: "power2.out"
+}, 1.8);
+
+// Scroll dot loop
+gsap.to(".scroll-dot", {
+  y: 12,
+  duration: 1.1,
+  ease: "sine.inOut",
+  yoyo: true,
+  repeat: -1,
+  delay: 2.2
+});
+
+
 // Text animations per panel
 heroPanels.forEach((panel) => {
   gsap.fromTo(
@@ -194,115 +280,9 @@ if (aboutSection) {
   }
 }
 
-// // Register plugin once
-// gsap.registerPlugin(ScrollTrigger);
-
-// const whySection = document.querySelector("#why");
-
-// if (whySection) {
-//   const header = whySection.querySelector(".why-header");
-//   const cards = whySection.querySelectorAll(".why-card");
-//   const container = whySection.querySelector(".why-grid"); // visible viewport
-//   const track = container; // in your markup, the grid itself is what moves
-
-//   // Header fade-in
-//   if (header) {
-//     gsap.from(header, {
-//       opacity: 0,
-//       y: 24,
-//       duration: 0.9,
-//       ease: "power2.out",
-//       scrollTrigger: {
-//         trigger: whySection,
-//         start: "top 80%",
-//         toggleActions: "play none none reverse"
-//       }
-//     });
-//   }
-
-//   // Cards stagger fade-in
-//   if (cards.length) {
-//     gsap.from(cards, {
-//       opacity: 0,
-//       y: 30,
-//       duration: 0.8,
-//       ease: "power2.out",
-//       stagger: 0.12,
-//       scrollTrigger: {
-//         trigger: whySection,
-//         start: "top 75%",
-//         end: "bottom 40%",
-//         toggleActions: "play none none reverse"
-//       }
-//     });
-//   }
 
 
-  
-//   // HORIZONTAL SCROLL ON MOBILE
-//   let mobileScrollTrigger = null;
-
-//   const mm = gsap.matchMedia();
-
-//   mm.add("(max-width: 768px)", () => {
-//     // Kill any existing mobile trigger for safety
-//     if (mobileScrollTrigger) {
-//       mobileScrollTrigger.kill();
-//       mobileScrollTrigger = null;
-//       gsap.set(track, { x: 0 });
-//     }
-
-//     // Measure every time we enter this media query
-//     const containerWidth = container.offsetWidth;
-//     const trackWidth = track.scrollWidth;
-//     const maxScroll = trackWidth - containerWidth;
-
-//     // If all cards fit already, no need for horizontal scroll
-//     if (maxScroll <= 0) {
-//       gsap.set(track, { x: 0 });
-//       return () => {}; // cleanup fn required by matchMedia
-//     }
-
-//     // Reset initial x
-//     gsap.set(track, { x: 0 });
-
-//     const horizTween = gsap.to(track, {
-//       // function-based so it recalculates correctly if ScrollTrigger invalidates
-//       x: () => -maxScroll,
-//       ease: "none"
-//     });
-
-//     mobileScrollTrigger = ScrollTrigger.create({
-//       trigger: whySection,        // pin the whole section, not just inner div
-//       animation: horizTween,
-//       pin: true,
-//       pinSpacing: true,
-//       scrub: 1,
-//       start: "top top",
-//       end: () => "+=" + maxScroll, 
-//       invalidateOnRefresh: true
-//     });
-
-//     // Cleanup when this media query no longer matches
-//     return () => {
-//       if (mobileScrollTrigger) {
-//         mobileScrollTrigger.kill();
-//         mobileScrollTrigger = null;
-//       }
-//       horizTween.kill();
-//       gsap.set(track, { x: 0 });
-//     };
-//   });
-
-//   // OPTIONAL: ensure desktop has no leftover transforms
-//   mm.add("(min-width: 769px)", () => {
-//     if (mobileScrollTrigger) {
-//       mobileScrollTrigger.kill();
-//       mobileScrollTrigger = null;
-//     }
-//     gsap.set(track, { x: 0 });
-//   });
-// }
+//WHY CHOOSE US
 
 
 
@@ -413,76 +393,6 @@ if (experienceSection) {
     }, 0.15);
   }
 }
-
-
-
-
-
-// // OUR PROCESS – LATERAL PIN INDICATOR (SIMPLIFIED, WORKING)
-// const processSection = document.querySelector("#process");
-
-// if (processSection) {
-//   const steps = Array.from(processSection.querySelectorAll(".process-step"));
-//   const slides = Array.from(processSection.querySelectorAll(".process-slide"));
-//   const fill = processSection.querySelector(".process-fill");
-
-//   if (!steps.length || !slides.length || !fill) {
-//     console.warn("Process section: missing steps, slides or fill element");
-//   } else {
-//     // Helper to set active step + slide + fill height
-//     const setActive = (index) => {
-//       steps.forEach((step, i) => {
-//         step.style.color = i === index ? "#6ee7b7" : "#9ca3af"; // emerald-300 vs zinc-400
-//       });
-
-//       slides.forEach((slide, i) => {
-//         gsap.to(slide, {
-//           autoAlpha: i === index ? 1 : 0,
-//           duration: 0.4,
-//           ease: "power2.out"
-//         });
-//       });
-
-//       const ratio = (index + 1) / steps.length;
-//       gsap.to(fill, {
-//         scaleY: ratio,
-//         transformOrigin: "top left",
-//         duration: 0.4,
-//         ease: "none"
-//       });
-//     };
-
-//     // Initial states
-//     gsap.set(fill, {
-//       position: "absolute",
-//       left: 0,
-//       top: 0,
-//       width: "3px",
-//       height: "100%",
-//       backgroundColor: "#6ee7b7",
-//       transformOrigin: "top left",
-//       scaleY: 1 / steps.length
-//     });
-
-//     // Only first slide visible initially
-//     gsap.set(slides.slice(1), { autoAlpha: 0 });
-//     setActive(0);
-
-//     // ScrollTrigger: pin section, move through steps
-//     ScrollTrigger.create({
-//       trigger: processSection,
-//       start: "top top",
-//       end: "+=" + steps.length * 80 + "%", // scroll distance
-//       pin: true,
-//       scrub: 1,
-//       anticipatePin: 1,
-//       onUpdate: (self) => {
-//         const index = Math.round(self.progress * (steps.length - 1));
-//         setActive(index);
-//       }
-//     });
-//   }
-// }
 
 
 

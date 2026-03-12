@@ -146,93 +146,7 @@
 
 </div>
 
-<script>
-  // LUXURY BRAND OPENING SEQUENCE
-const introTl = gsap.timeline({ delay: 0.2 });
 
-// Frame lines draw in simultaneously
-introTl.to([".intro-line-top", ".intro-line-bottom"], {
-  scaleX: 1,
-  duration: 0.8,
-  ease: "power3.inOut",
-  stagger: 0.05
-}, 0);
-
-introTl.to([".intro-vline-left", ".intro-vline-right"], {
-  scaleY: 1,
-  duration: 0.9,
-  ease: "power3.inOut",
-  stagger: 0.05
-}, 0.1);
-
-// Background image breathes in
-introTl.to(".intro-bg", {
-  opacity: 1,
-  duration: 1.5,
-  ease: "power2.out"
-}, 0.3);
-
-// Background image slow zoom out
-introTl.to(".intro-bg img", {
-  scale: 1,
-  duration: 4,
-  ease: "power1.out"
-}, 0.3);
-
-// Corner labels
-introTl.to([".intro-top-label", ".intro-bottom-label"], {
-  opacity: 1,
-  duration: 0.5,
-  ease: "power2.out",
-  stagger: 0.1
-}, 0.6);
-
-// Kicker
-introTl.to(".intro-kicker-wrap", {
-  opacity: 1,
-  duration: 0.5,
-  ease: "power2.out"
-}, 0.8);
-
-// Main headline clip reveal
-introTl.to(".intro-headline-1", {
-  y: 0,
-  duration: 1.1,
-  ease: "power4.out"
-}, 0.9);
-
-// Subline clip reveal
-introTl.to(".intro-subline", {
-  y: 0,
-  duration: 0.8,
-  ease: "power3.out"
-}, 1.3);
-
-// Dots
-introTl.to(".intro-dots", {
-  opacity: 1,
-  duration: 0.5,
-  ease: "power2.out"
-}, 1.6);
-
-// Scroll hint
-introTl.to(".intro-scroll", {
-  opacity: 1,
-  duration: 0.5,
-  ease: "power2.out"
-}, 1.8);
-
-// Scroll dot loop
-gsap.to(".scroll-dot", {
-  y: 12,
-  duration: 1.1,
-  ease: "sine.inOut",
-  yoyo: true,
-  repeat: -1,
-  delay: 2.2
-});
-
-</script>
 
     <section
       class="panel relative flex min-h-screen w-screen flex-col items-center justify-center text-center overflow-hidden">
@@ -625,6 +539,23 @@ gsap.to(".scroll-dot", {
         </article>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     <!-- OUR SIGNATURE IV INFUSION THERAPIES -->
@@ -1283,10 +1214,10 @@ gsap.to(".scroll-dot", {
           Contact
         </h4>
         <div class="space-y-3 text-sm md:text-base">
-          <p class="text-zinc-200">+971 98765 43210</p>
+          <p class="text-zinc-200"> +971 45581710</p>
           <p class="text-zinc-200">info@iveawellness.com</p>
           <p class="text-zinc-500 text-xs uppercase tracking-[0.15em]">
-            Dubai, United Arab Emirates
+            Office no 3, Spectrum Tower B, Oud Mehta,  Dubai, UAE
           </p>
         </div>
       </div>

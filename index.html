@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IVÉA Hero - Layered Panels</title>
+  <title>IVÉA | Luxury Concierge IV Therapy - Dubai </title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,6 +13,12 @@
   <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body class="bg-black text-white overflow-x-hidden font-sans">
@@ -39,7 +45,7 @@
         <a href="./service.html" class="hover:text-emerald-300 transition-colors">
           IV DRIPS
         </a>
-        <a href="./service.html" class="hover:text-emerald-300 transition-colors">
+        <a href="./contact.html" class="hover:text-emerald-300 transition-colors">
           CONTACT US
         </a>
       </div>
@@ -49,102 +55,96 @@
   <!-- MAIN CONTENT (padding-top to clear fixed nav) -->
   <main class="pt-16">
 
-    <!-- INTRO / DESCRIPTION (not pinned, just first hero state) -->
-    <!-- <div id="home"
-      class="description panel relative flex min-h-screen w-screen flex-col items-center justify-center bg-gradient-to-br from-black via-zinc-900 to-black text-center px-4">
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-[0.35em] mb-4">
-        I V É A
-      </h1>
-      <p class="max-w-xl text-sm md:text-lg text-zinc-200 mb-8">
-        In a world where wellness meets sophistication.
-      </p>
-      <div class="scroll-down flex items-center justify-center">
-        <div class="arrow w-5 h-5 border-r-2 border-b-2 border-white rotate-45 animate-bounce">
-        </div>
+    <!-- INTRO – LUXURY BRAND OPENING -->
+    <div id="home"
+      class="description panel relative flex min-h-screen w-screen flex-col items-center justify-center bg-black text-center px-6 overflow-hidden">
+
+
+      <!-- Horizontal split lines (top & bottom) -->
+      <div class="intro-line-top absolute top-0 left-0 right-0 h-px bg-white/10 origin-left scale-x-0"></div>
+      <div class="intro-line-bottom absolute bottom-0 left-0 right-0 h-px bg-white/10 origin-right scale-x-0"></div>
+
+      <!-- Left vertical rule -->
+      <div
+        class="intro-vline-left absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-emerald-400/30 to-transparent scale-y-0 origin-top">
       </div>
-    </div> -->
 
-<!-- INTRO – LUXURY BRAND OPENING -->
-<div id="home"
-  class="description panel relative flex min-h-screen w-screen flex-col items-center justify-center bg-black text-center px-6 overflow-hidden">
+      <!-- Right vertical rule -->
+      <div
+        class="intro-vline-right absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-emerald-400/30 to-transparent scale-y-0 origin-bottom">
+      </div>
 
+      <!-- Top label row -->
+      <div
+        class="intro-top-label absolute top-8 md:top-10 left-0 right-0 flex items-center justify-between px-6 md:px-10 opacity-0">
+        <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
+          Est. Wellness
+        </p>
+        <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
+          Dubai · UAE
+        </p>
+      </div>
 
-  <!-- Horizontal split lines (top & bottom) -->
-  <div class="intro-line-top absolute top-0 left-0 right-0 h-px bg-white/10 origin-left scale-x-0"></div>
-  <div class="intro-line-bottom absolute bottom-0 left-0 right-0 h-px bg-white/10 origin-right scale-x-0"></div>
+      <!-- Bottom label row -->
+      <div
+        class="intro-bottom-label absolute bottom-8 md:bottom-10 left-0 right-0 flex items-center justify-between px-6 md:px-10 opacity-0">
+        <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
+          Home · Hotel · Office
+        </p>
+        <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
+          Concierge IV Therapy
+        </p>
+      </div>
 
-  <!-- Left vertical rule -->
-  <div class="intro-vline-left absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-emerald-400/30 to-transparent scale-y-0 origin-top"></div>
+      <!-- Center: Main content -->
+      <div class="relative z-10 flex flex-col items-center">
 
-  <!-- Right vertical rule -->
-  <div class="intro-vline-right absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-emerald-400/30 to-transparent scale-y-0 origin-bottom"></div>
+        <!-- Kicker line above -->
+        <div class="intro-kicker-wrap flex items-center gap-4 mb-6 opacity-0">
+          <div class="h-px w-8 md:w-16 bg-emerald-400/50"></div>
+          <p class="text-[0.6rem] md:text-[0.65rem] tracking-[0.45em] uppercase text-emerald-300/70">
+            Premium IV Infusion Therapy
+          </p>
+          <div class="h-px w-8 md:w-16 bg-emerald-400/50"></div>
+        </div>
 
-  <!-- Top label row -->
-  <div class="intro-top-label absolute top-8 md:top-10 left-0 right-0 flex items-center justify-between px-6 md:px-10 opacity-0">
-    <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
-      Est. Wellness
-    </p>
-    <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
-      Dubai · UAE
-    </p>
-  </div>
+        <!-- Main headline – two lines for drama -->
+        <div class="overflow-hidden">
+          <h1
+            class="intro-headline-1 block text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9.5rem] font-extralight tracking-[0.45em] uppercase leading-none"
+            style="transform: translateY(110%)">
+            IVÉA
+          </h1>
+        </div>
 
-  <!-- Bottom label row -->
-  <div class="intro-bottom-label absolute bottom-8 md:bottom-10 left-0 right-0 flex items-center justify-between px-6 md:px-10 opacity-0">
-    <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
-      Home · Hotel · Office
-    </p>
-    <p class="text-[0.55rem] tracking-[0.4em] uppercase text-zinc-500">
-      Concierge IV Therapy
-    </p>
-  </div>
+        <!-- Subline clip -->
+        <div class="overflow-hidden mt-1 md:mt-2">
+          <p class="intro-subline block text-[0.7rem] md:text-sm tracking-[0.45em] uppercase text-zinc-300/60"
+            style="transform: translateY(110%)">
+            Where wellness meets sophistication
+          </p>
+        </div>
 
-  <!-- Center: Main content -->
-  <div class="relative z-10 flex flex-col items-center">
+        <!-- Emerald accent dot row -->
+        <div class="intro-dots flex items-center gap-2 mt-8 opacity-0">
+          <div class="w-1 h-1 rounded-full bg-emerald-400/30"></div>
+          <div class="w-1.5 h-1.5 rounded-full bg-emerald-400/60"></div>
+          <div class="w-1 h-1 rounded-full bg-emerald-400/30"></div>
+        </div>
 
-    <!-- Kicker line above -->
-    <div class="intro-kicker-wrap flex items-center gap-4 mb-6 opacity-0">
-      <div class="h-px w-8 md:w-16 bg-emerald-400/50"></div>
-      <p class="text-[0.6rem] md:text-[0.65rem] tracking-[0.45em] uppercase text-emerald-300/70">
-        Premium IV Infusion Therapy
-      </p>
-      <div class="h-px w-8 md:w-16 bg-emerald-400/50"></div>
+      </div>
+
+      <!-- Scroll hint – bottom center -->
+      <div
+        class="intro-scroll absolute bottom-10 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0">
+        <div
+          class="relative w-[1.1rem] h-7 border border-white/15 rounded-full flex items-start justify-center pt-[5px]">
+          <div class="scroll-dot w-[3px] h-[3px] rounded-full bg-emerald-400/70"></div>
+        </div>
+        <p class="text-[0.5rem] tracking-[0.4em] uppercase text-zinc-600 mt-1">Scroll</p>
+      </div>
+
     </div>
-
-    <!-- Main headline – two lines for drama -->
-    <div class="overflow-hidden">
-      <h1 class="intro-headline-1 block text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9.5rem] font-extralight tracking-[0.45em] uppercase leading-none"
-        style="transform: translateY(110%)">
-        IVÉA
-      </h1>
-    </div>
-
-    <!-- Subline clip -->
-    <div class="overflow-hidden mt-1 md:mt-2">
-      <p class="intro-subline block text-[0.7rem] md:text-sm tracking-[0.45em] uppercase text-zinc-300/60"
-        style="transform: translateY(110%)">
-        Where wellness meets sophistication
-      </p>
-    </div>
-
-    <!-- Emerald accent dot row -->
-    <div class="intro-dots flex items-center gap-2 mt-8 opacity-0">
-      <div class="w-1 h-1 rounded-full bg-emerald-400/30"></div>
-      <div class="w-1.5 h-1.5 rounded-full bg-emerald-400/60"></div>
-      <div class="w-1 h-1 rounded-full bg-emerald-400/30"></div>
-    </div>
-
-  </div>
-
-  <!-- Scroll hint – bottom center -->
-  <div class="intro-scroll absolute bottom-10 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0">
-    <div class="relative w-[1.1rem] h-7 border border-white/15 rounded-full flex items-start justify-center pt-[5px]">
-      <div class="scroll-dot w-[3px] h-[3px] rounded-full bg-emerald-400/70"></div>
-    </div>
-    <p class="text-[0.5rem] tracking-[0.4em] uppercase text-zinc-600 mt-1">Scroll</p>
-  </div>
-
-</div>
 
 
 
@@ -210,16 +210,6 @@
         LEARN MORE
       </a>
     </section>
-
-    <!-- NAV DOTS (still only control hero panels) -->
-    <!-- <div class="nav-dots fixed right-5 md:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
-      <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors active"
-        data-panel="0"></button>
-      <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors"
-        data-panel="1"></button>
-      <button class="nav-dot h-3.5 w-3.5 rounded-full bg-white/40 transition-transform transition-colors"
-        data-panel="2"></button>
-    </div> -->
 
     <!-- NEXT SECTION: Different types of IV drips (normal scrolling) -->
     <section id="drips" class="min-h-screen w-full bg-zinc-950 text-zinc-100 flex items-center justify-center px-4">
@@ -555,7 +545,7 @@
 
 
 
-    
+
 
 
     <!-- OUR SIGNATURE IV INFUSION THERAPIES -->
@@ -1144,8 +1134,43 @@
     </section>
   </main>
 
+<!-- WhatsApp Float Button -->
+<div class="wa-float fixed bottom-6 right-6 z-50 flex items-end gap-3" style="opacity:0; transform: translateY(20px);">
+
+  <!-- Tooltip bubble -->
+  <div class="wa-tooltip relative mb-1 max-w-[180px] rounded-2xl rounded-br-none bg-white px-4 py-3 shadow-xl shadow-black/20"
+    style="opacity:0; transform: translateX(12px) scale(0.95); transform-origin: right center;">
+    <p class="text-[0.7rem] leading-snug text-zinc-800 font-medium">How can we help you today? 👋</p>
+    <!-- Tail -->
+    <div class="absolute -right-2 bottom-2 w-0 h-0"
+      style="border-top: 6px solid transparent; border-bottom: 0px solid transparent; border-left: 8px solid white;"></div>
+  </div>
+
+  <!-- Button + pulse ring -->
+  <a href="https://wa.me/971565728054?text=Hi%2C%20I%E2%80%99d%20like%20to%20book%20an%20IV%20therapy%20session"
+  target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+    class="wa-btn relative flex items-center justify-center w-[58px] h-[58px] rounded-full shadow-xl shadow-black/30"
+    style="background: linear-gradient(135deg, #25D366 0%, #128C5E 100%);">
+
+    <!-- Pulse ring 1 -->
+    <span class="wa-ring-1 absolute inset-0 rounded-full"
+      style="background: #25D366; opacity: 0.35;"></span>
+    <!-- Pulse ring 2 -->
+    <span class="wa-ring-2 absolute inset-0 rounded-full"
+      style="background: #25D366; opacity: 0.2;"></span>
+
+    <!-- WhatsApp Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="relative z-10 w-7 h-7 fill-white">
+      <path d="M16.003 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.354.632 4.559 1.733 6.461L2.667 29.333l7.07-1.697A13.27 13.27 0 0 0 16.003 29.333C23.369 29.333 29.333 23.364 29.333 16S23.369 2.667 16.003 2.667zm0 2.4c6.04 0 10.93 4.89 10.93 10.933s-4.89 10.933-10.93 10.933a10.9 10.9 0 0 1-5.566-1.524l-.397-.24-4.197 1.007 1.04-4.083-.262-.41A10.89 10.89 0 0 1 5.073 16c0-6.043 4.89-10.933 10.93-10.933zm-3.27 5.6c-.213 0-.558.08-.85.4-.293.32-1.118 1.093-1.118 2.664s1.144 3.09 1.303 3.304c.16.213 2.24 3.573 5.52 4.875 2.72 1.083 3.28.867 3.866.813.587-.053 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373s-1.893-.934-2.187-1.04c-.293-.107-.506-.16-.72.16-.213.32-.826 1.04-.986 1.253-.16.213-.346.24-.64.08-.293-.16-1.24-.457-2.362-1.457-.874-.777-1.463-1.737-1.635-2.03-.173-.293-.018-.453.13-.6.132-.132.294-.346.44-.52.148-.173.197-.293.294-.506.098-.213.05-.4-.025-.56-.08-.16-.706-1.74-.98-2.387-.253-.614-.52-.52-.72-.533-.186-.013-.4-.016-.613-.016z"/>
+    </svg>
+  </a>
+</div>
+
+
 
   <script src="./js/index.js"></script>
+  <script src="./js/whatsapp.js"></script>
+
 </body>
 
 <!-- FOOTER -->
@@ -1217,7 +1242,7 @@
           <p class="text-zinc-200"> +971 45581710</p>
           <p class="text-zinc-200">info@iveawellness.com</p>
           <p class="text-zinc-500 text-xs uppercase tracking-[0.15em]">
-            Office no 3, Spectrum Tower B, Oud Mehta,  Dubai, UAE
+            Office no 3, Spectrum Tower B, Oud Mehta, Dubai, UAE
           </p>
         </div>
       </div>

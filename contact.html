@@ -288,94 +288,98 @@
                     </div>
 
                     <!-- Form -->
-                    <form class="space-y-8 max-w-lg">
-
+                    <form id="consultation-form" class="space-y-8 max-w-lg">
                         <!-- Name -->
                         <div class="form-field group relative">
-                            <input type="text" name="name" placeholder=" " required
-                                class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
-                            <label
-                                class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
-                                Full Name
-                            </label>
+                          <input type="text" name="name" placeholder=" " required
+                            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
+                          <label
+                            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+                            Full Name
+                          </label>
                         </div>
-
+                      
                         <!-- Phone -->
                         <div class="form-field group relative">
-                            <input type="tel" name="phone" placeholder=" " required
-                                class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
-                            <label
-                                class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
-                                Phone Number
-                            </label>
+                          <input type="tel" name="phone" placeholder=" " required
+                            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
+                          <label
+                            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+                            Phone Number
+                          </label>
                         </div>
-
+                      
                         <!-- Email -->
                         <div class="form-field group relative">
-                            <input type="email" name="email" placeholder=" " required
-                                class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
-                            <label
-                                class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
-                                Email Address
-                            </label>
+                          <input type="email" name="email" placeholder=" " required
+                            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors" />
+                          <label
+                            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+                            Email Address
+                          </label>
                         </div>
-
+                      
                         <!-- Preferred Service -->
                         <div class="form-field space-y-2">
-                            <label class="text-[0.6rem] tracking-[0.3em] uppercase text-zinc-500">
-                                Preferred Service
-                            </label>
-                            <select name="service" required
-                                class="w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-300 focus:outline-none focus:border-emerald-400/70 transition-colors appearance-none cursor-pointer">
-                                <option value="" disabled selected class="bg-zinc-900 text-zinc-500">Select IV therapy
-                                </option>
-                                <option class="bg-zinc-900">Hangover Recovery Drip</option>
-                                <option class="bg-zinc-900">Jet Lag Recovery Infusion</option>
-                                <option class="bg-zinc-900">Immunity Booster Drip</option>
-                                <option class="bg-zinc-900">Skin Rejuvenation Infusion</option>
-                                <option class="bg-zinc-900">Stress Relief & Energy Boost</option>
-                                <option class="bg-zinc-900">Diabetic Support Infusion</option>
-                                <option class="bg-zinc-900">Anti-Aging & Longevity Drip</option>
-                                <option class="bg-zinc-900">Athletic Recovery Infusion</option>
-                                <option class="bg-zinc-900">Detox & Liver Support Drip</option>
-                                <option class="bg-zinc-900">Brain & Focus Booster</option>
-                                <option class="bg-zinc-900">Beauty Glow Infusion</option>
-                                <option class="bg-zinc-900">Senior Wellness Support</option>
-                            </select>
+                          <label class="text-[0.6rem] tracking-[0.3em] uppercase text-zinc-500">
+                            Preferred Service
+                          </label>
+                          <select name="service" required
+                            class="w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-300 focus:outline-none focus:border-emerald-400/70 transition-colors appearance-none cursor-pointer">
+                            <option value="" disabled selected class="bg-zinc-900 text-zinc-500">
+                              Select IV therapy
+                            </option>
+                            <option class="bg-zinc-900">Hangover Recovery Drip</option>
+                            <option class="bg-zinc-900">Jet Lag Recovery Infusion</option>
+                            <option class="bg-zinc-900">Immunity Booster Drip</option>
+                            <option class="bg-zinc-900">Skin Rejuvenation Infusion</option>
+                            <option class="bg-zinc-900">Stress Relief &amp; Energy Boost</option>
+                            <option class="bg-zinc-900">Diabetic Support Infusion</option>
+                            <option class="bg-zinc-900">Anti-Aging &amp; Longevity Drip</option>
+                            <option class="bg-zinc-900">Athletic Recovery Infusion</option>
+                            <option class="bg-zinc-900">Detox &amp; Liver Support Drip</option>
+                            <option class="bg-zinc-900">Brain &amp; Focus Booster</option>
+                            <option class="bg-zinc-900">Beauty Glow Infusion</option>
+                            <option class="bg-zinc-900">Senior Wellness Support</option>
+                          </select>
                         </div>
-
+                      
                         <!-- Preferred Date -->
                         <div class="form-field space-y-2">
-                            <label class="text-[0.6rem] tracking-[0.3em] uppercase text-zinc-500">
-                                Preferred Date
-                            </label>
-                            <input type="date" name="date"
-                                class="w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-300 focus:outline-none focus:border-emerald-400/70 transition-colors [color-scheme:dark]" />
+                          <label class="text-[0.6rem] tracking-[0.3em] uppercase text-zinc-500">
+                            Preferred Date
+                          </label>
+                          <input type="date" name="date"
+                            class="w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-300 focus:outline-none focus:border-emerald-400/70 transition-colors [color-scheme:dark]" />
                         </div>
-
+                      
                         <!-- Message -->
                         <div class="form-field group relative">
-                            <textarea name="message" rows="2" placeholder=" "
-                                class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors resize-none"></textarea>
-                            <label
-                                class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
-                                Message
-                            </label>
+                          <textarea name="message" rows="2" placeholder=" "
+                            class="peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-zinc-100 placeholder-transparent focus:outline-none focus:border-emerald-400/70 transition-colors resize-none"></textarea>
+                          <label
+                            class="absolute left-0 top-3 text-xs tracking-[0.25em] uppercase text-zinc-500 transition-all duration-300 peer-focus:-top-4 peer-focus:text-[0.6rem] peer-focus:text-emerald-300/80 peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-[0.6rem] peer-[:not(:placeholder-shown)]:text-zinc-500">
+                            Message
+                          </label>
                         </div>
-
+                      
                         <!-- CTA -->
-                        <div class="pt-4">
-                            <button type="submit"
-                                class="w-full rounded-full border-2 border-emerald-300 text-emerald-200 py-4 text-sm tracking-[0.25em] uppercase hover:bg-emerald-300 hover:text-black transition-all duration-300 group">
-                                Request Consultation
-                                <span class="ml-2 group-hover:translate-x-1 inline-block transition-transform">→</span>
-                            </button>
-                            <p class="text-center text-[0.6rem] tracking-[0.2em] uppercase text-zinc-600 mt-3">
-                                We respond within 2 hours
-                            </p>
+                        <div class="pt-4 space-y-3">
+                          <button type="submit"
+                            class="w-full rounded-full border-2 border-emerald-300 text-emerald-200 py-4 text-sm tracking-[0.25em] uppercase hover:bg-emerald-300 hover:text-black transition-all duration-300 group">
+                            Request Consultation
+                            <span class="ml-2 group-hover:translate-x-1 inline-block transition-transform">→</span>
+                          </button>
+                          <p class="text-center text-[0.6rem] tracking-[0.2em] uppercase text-zinc-600">
+                            We respond within 2 hours
+                          </p>
+                          <!-- Status line -->
+                          <p
+                            class="form-status text-center text-[0.7rem] tracking-[0.2em] uppercase text-zinc-500 min-h-[1.25rem]">
+                          </p>
                         </div>
-
-                    </form>
+                      </form>
+                      
                 </div>
             </div>
         </section>
@@ -527,7 +531,7 @@
 
 
     <script src="./js/whatsapp.js"></script>
-
+    <script src="./js/booking.js"></script>
     <script src="./js/contact.js"></script>
 </body>
 

@@ -546,9 +546,9 @@ if (whoSection) {
     // Tag highlight
     tags.forEach((tag, i) => {
       const active = i === index;
-      tag.style.borderColor = active ? "rgba(110, 231, 183, 0.8)" : "rgba(229, 231, 235, 0.2)";
-      tag.style.color = active ? "#d1fae5" : "#e5e7eb";
-      tag.style.backgroundColor = active ? "rgba(15, 23, 42, 0.4)" : "transparent";
+      tag.style.borderColor     = active ? "rgba(255, 242, 177, 0.8)" : "rgba(229, 231, 235, 0.2)";
+      tag.style.color           = active ? "#FFF2B1"                  : "#e5e7eb";
+      tag.style.backgroundColor = active ? "rgba(255, 242, 177, 0.15)": "transparent";      
     });
 
     // Text change with small fade
